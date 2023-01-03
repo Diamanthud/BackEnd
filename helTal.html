@@ -15,16 +15,16 @@
     </p>
 
     <div>
-      <form id="myform">
+      <form id="form">
         <input type="text" id="helTal" />
       </form>
     </div>
 
     <script>
-      document.getElementById("myform").addEventListener("change", myfunc);
+      document.getElementById("form").addEventListener("change", minFunktion);
 
-      function myfunc() {
-        let num = parseInt(document.getElementById("helTal").value, 10);
+      function minFunktion() {
+        let num = parseInt(document.getElementById("helTal").value);
         if (num < 0) {
           console.log(0);
         }
