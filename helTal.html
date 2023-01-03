@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Övning 1.</h2>
+    <p>
+      Mata in en ett heltal. Om heltalet är under 0 så returnerar den alltid 0
+      Om heltalet är 1-10 så returnerar den heltaled Om heltalet är över 10 så
+      returneras talet gånger sig själv
+    </p>
+
+    <div>
+      <form id="myform">
+        <input type="text" id="helTal" />
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("myform").addEventListener("change", myfunc);
+
+      function myfunc() {
+        let num = parseInt(document.getElementById("helTal").value, 10);
+        if (num < 0) {
+          console.log(0);
+        }
+        if (num > 0 && num < 10) {
+          console.log(num);
+        }
+        if (num > 10) {
+          console.log(num * num);
+        }
+        if (num == 0) {
+          console.log("Välj inte 0 plz");
+        }
+      }
+    </script>
+  </body>
+</html>
